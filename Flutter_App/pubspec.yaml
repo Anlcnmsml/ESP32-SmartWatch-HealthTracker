@@ -1,0 +1,45 @@
+name: ilk_projem
+description: "Akıllı Güvenlik Sistemi"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Standart ikonlar
+  cupertino_icons: ^1.0.6
+  
+  # Arama yapmak (112)
+  url_launcher: ^6.2.5
+  
+  # Tarih formatlama
+  intl: ^0.19.0
+  
+  # Verileri kaydetme
+  shared_preferences: ^2.2.2
+  
+  # --- DEĞİŞİKLİK BURADA ---
+  # Eski kütüphaneyi sildik.
+  # Yeni (BLE) kütüphanesini ekledik:
+  flutter_blue_plus: ^1.31.0
+  # -------------------------
+  
+  # İzin yönetimi
+  permission_handler: ^11.3.0
+
+  # Firebase
+  firebase_core: ^2.27.0
+  firebase_database: ^10.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
